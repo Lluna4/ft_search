@@ -1,4 +1,6 @@
 # This is a really rough (and really bad) installation script, i'll probably update it when i know more bash
+git clone https://github.com/carlyjb17/ft_search ft_search
+cd ft_search
 cd libft
 make
 make clean
