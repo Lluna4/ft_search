@@ -60,9 +60,9 @@ int main(int argv, char**args)
                 if (ft_strncmp(ft_strnstr(buffer[index], args[2], ft_strlen(buffer[index])), buffer[index], ft_strlen(buffer[index])) == 0)
                 {
                     if ((index + 1) >= size)
-                        ft_printf("%s", ft_higher(buffer[index]));
+                        ft_printf("\x1b[32m%s\x1b[m", ft_higher(buffer[index]));
                     else 
-                        ft_printf("%s ", ft_higher(buffer[index]));
+                        ft_printf("\x1b[32m%s \x1b[m", ft_higher(buffer[index]));
                 }
                 else
                 {
@@ -84,3 +84,18 @@ int main(int argv, char**args)
     }
     return(0);
 }
+/*
+       .=.A.=.
+ __.=./\ / \ /\.=.__
+(-.'-;  |   |  ;-'.-)
+   \ `\/     \/` /
+    ;  `\   /`  ;
+    |    | |    |
+    ;,"-.-"-.-",;
+     \\/^\ /^\//
+      \   `   /
+       ',___,'
+        \\V//
+         |||
+         |||
+         |||*/
