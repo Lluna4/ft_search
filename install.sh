@@ -11,5 +11,6 @@ make clean
 cd ..
 gcc main.c libft/libft.a printf/libftprintf.a
 path=$(realpath a.out)
-echo "alias search=$path" > ~/.bashrc
-source ~/.bashrc
+echo "alias search=$path" > $HOME/.bashrc
+source $HOME/.bashrc
+echo "For this command to work close and open the terminal"
