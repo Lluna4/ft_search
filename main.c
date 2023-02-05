@@ -36,7 +36,7 @@ int main(int argv, char**args)
     }
     if (ft_strncmp(args[1], "-help", ft_strlen(args[1])) == 0)
     {
-        ft_printf("/a.out <file path> <word to search>\n");
+        ft_printf("search <file path> <word to search>\n");
         return(0);
     }
     int fd = open(args[1], O_RDONLY);
