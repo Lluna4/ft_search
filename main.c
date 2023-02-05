@@ -26,23 +26,23 @@ int main(int argv, char**args)
 {
     if (!args[1])
     {
-        ft_printf("No has puesto un argumento");
+        ft_printf("No argument detected\n");
         return(-1);
     }
     if (!args[1] || (!args[2] && ft_strncmp(args[1], "-help", ft_strlen(args[0])) != 0))
     {
-        ft_printf("No has puesto un argumento");
+        ft_printf("No argument detected\n");
         return(-1);   
     }
     if (ft_strncmp(args[1], "-help", ft_strlen(args[1])) == 0)
     {
-        ft_printf("/a.out <path txt> <palabra a encontrar>");
+        ft_printf("/a.out <file path> <word to search>\n");
         return(0);
     }
     int fd = open(args[1], O_RDONLY);
     if (fd < 0)
     {
-        ft_printf("Ha habido un error al abrir el archivo");
+        ft_printf("The program failed to open the file\n");
         return(-1);
     }
     while (1)
